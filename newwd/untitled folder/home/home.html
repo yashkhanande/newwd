@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=., initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+   <link rel="stylesheet" href="home.scss" type="text/css">
+   <script src="home.js"></script>
+</head>
+
+<body>
+    <div class="hero">
+        <div class="box-shadow">
+
+        </div>
+        <div class="section1">
+            <div class="logo">
+                <a href="home.html">
+                    <h1>Edubit</h1>
+                </a>
+            </div>
+            <div class="more">
+                <a href="" class="opt">Dashbord</a>
+                <a href="" class="opt">Attendence</a>
+                <a href="" class="opt">Faculty</a>
+                <a href="" class="opt">Exam</a>
+                <a href="" class="opt">Notes</a>
+                <a href="" class="opt">Events</a>
+                <a href="" class="opt">Profile</a>
+                <a href="" class="opt" id="logOut-opt"><img src="icons8-logout-26.png" alt="">Logout</a>
+            </div>
+        </div>
+        <div class="section2">
+            <div class="nav">
+                <div class="todaydate">
+                    <p id="datetime"></p>
+
+                    <script>
+                      // Get current date and time
+                      var now = new Date();
+                      var datetime = now.toLocaleString();
+                    
+                      // Insert date and time into HTML
+                      document.getElementById("datetime").innerHTML = datetime;
+                    </script>
+                </div>
+                <div class="search-container">
+
+                    <div class="prono">
+                        <div class="notification">
+                            <button type="button" class="icon-button">
+                                <span class="material-icons">notifications</span>
+                                <span class="icon-button__badge">2</span>
+                              </button>
+                        </div>
+                        <div class="profile">
+                            <button><img src="blank-profile-picture-973460_960_720.webp" alt=""></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="page-title">
+                <a href=""><h1>Dashboard</h1></a>
+            </div>
+            <div class="main">
+                <div class="dashboard">
+                    <div class="highlight">
+                        <div class="attendence-card hcard">
+                            <div class="boxname">
+                                <span>Attendence</span>
+                            </div>
+                            <div class="percentage">
+                                <h3>100%</h3>
+                            </div>
+                        </div>
+                        <div class="exams-card hcard">
+                            <div class="boxname">
+                                <span>Exams</span>
+                            </div>
+                            <div class="exam-date">
+                                <h3>12 May</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="highlight2">
+                        <div class="lab-card h2card">
+                            <div class="card-name">
+                                <h4>Lab</h4>
+                            </div>
+                            <div class="lab-attendence tut-attendence">
+                                <div class="to-attend">
+                                    <h2>20</h2>
+                                </div>
+                                <div class="lab-attendence-percentage">
+                                    <p>Total - 100%</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tutorial-card h2card">
+                            <div class="card-name">
+                                <h4>Tutorial</h4>
+                            </div>
+                            <div class="tut-attendence ">
+                                <div class="to-attend">
+                                    <h2>30</h2>
+                                </div>
+                                <div class="lab-attendence-percentage tut-attendence-percentage">
+                                    <p>Total - 100%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ongoing-event">
+                    <div class="slogan">
+                        <h2>Institutional Calendar and Ongoing Lecture</h2>
+                    </div>
+                    <div class="calender">
+<!-- <iframe src="https://calendar.google.com/calendar/embed?src=8dacadbdf7fad066f0dd9bcfcbd29192278876d0401856740a02ac829fc8a8ea%40group.calendar.google.com&ctz=UTC" style="border: 0" width="180" height="180" frameborder="0" scrolling="no"></iframe> -->
+                        <img src="https://s3-alpha-sig.figma.com/img/bf59/6012/3b7856976ed80a4d562f7a618dc5b8a7?Expires=1714348800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Rff~hXObMUuwy9eNatuj1qb3Yj6AIjtBxrnG8ZInP77ILxSa0wRwpkG6m~cxCSRjtiT~FtchWxD8nR7k7CzNwaT9iGrdTk-t6K15OmJdGwmRqhyHpvGBsM0C8dXd3qSS7PVFPtJzKsvwl5FRmVAFtpvrOvBSZuqo2TAXyoV21ysB4Blv0sqOtUmTj8Q8awAw~2-CiiGbUU5YH4sxIQAIE7owptvZuIWi9wGILI7YEp7-5Ywvmmdv9fkaeElQ0KP879eiI9-1prLnMsYaSpsgMvygKyHWXkkK4VzA9XqYLrr4mMDFTVzAJu6VDTN2Toz3ZgqKLxFXUg5idGWGbW1Wbw__" alt="">
+                    </div>
+                </div>
+                <div class="schedule">
+  
+                    <div class="schedule_header">
+                      <span class="dl">Time</span>
+                      <span class="ds">Ti</span></div>  
+                    <!-- week-->
+                    <div class="schedule_header schedule-sunday">
+                      <span class="dl">Sunday</span>
+                      <span class="ds">Su</span>
+                    </div>
+                    <div class="schedule_header schedule-monday">
+                      <span class="dl">Monday</span>
+                      <span class="ds">M</span></div>
+                    <div class="schedule_header schedule-tuesday">
+                      <span class="dl">Tuesday</span>
+                      <span class="ds">T</span></div>
+                    <div class="schedule_header schedule-wednesday">
+                      <span class="dl">Wednesday</span>
+                      <span class="ds">W</span></div>
+                    <div class="schedule_header schedule-thursday">
+                      <span class="dl">Thursday</span>
+                      <span class="ds">Th</span></div>
+                    <div class="schedule_header schedule-friday">
+                      <span class="dl">Friday</span>
+                      <span class="ds">F</span></div>
+                    <div class="schedule_header schedule-saturday">
+                      <span class="dl">Saturday</span>
+                      <span class="ds">Sa</span></div>
+                    
+                    <!-- Time-->
+                    <div class="schedule_time time-from-s">07:00 A.M.</div>
+                    <div class="schedule_time time-from-sf">07:15 A.M.</div>
+                    <div class="schedule_time time-from-st">07:30 AM.</div>
+                    <div class="schedule_time time-from-sff">07:45 A.M.</div>
+                    
+                    <div class="schedule_time time-from-e">08:00 A.M.</div>
+                    <div class="schedule_time time-from-ef">08:15 A.M.</div>
+                    <div class="schedule_time time-from-et">08:30 AM.</div>
+                    <div class="schedule_time time-from-eff">08:45 A.M.</div>
+                    
+                    <div class="schedule_time time-from-n">09:00 A.M.</div>
+                    <div class="schedule_time time-from-nf">09:15 A.M.</div>
+                    <div class="schedule_time time-from-nt">09:30 AM.</div>
+                    <div class="schedule_time time-from-nff">09:45 A.M.</div>
+                      
+                  <!--  Grid Rows-->
+                    <div class="grid time-from-s time-to-sf schedule-row-from-sunday schedule-row-to-saturday"></div>  
+                    <div class="grid time-from-sf time-to-st schedule-row-from-sunday schedule-row-to-saturday"></div>
+                    <div class="grid time-from-st time-to-sff schedule-row-from-sunday schedule-row-to-saturday"></div>
+                    
+                    <div class="grid time-from-sff time-to-e schedule-row-from-sunday schedule-row-to-saturday"></div>
+                    <div class="grid time-from-e time-to-ef schedule-row-from-sunday schedule-row-to-saturday"></div>
+                    <div class="grid time-from-ef time-to-et schedule-row-from-sunday schedule-row-to-saturday"></div>
+                    <div class="grid time-from-et time-to-eff schedule-row-from-sunday schedule-row-to-saturday"></div>
+                    
+                    <div class="grid time-from-eff time-to-n schedule-row-from-sunday schedule-row-to-saturday"></div>
+                    <div class="grid time-from-n time-to-nf schedule-row-from-sunday schedule-row-to-saturday"></div>
+                    <div class="grid time-from-nf time-to-nt schedule-row-from-sunday schedule-row-to-saturday"></div>
+                    <div class="grid time-from-nt time-to-nff schedule-row-from-sunday schedule-row-to-saturday"></div>
+                    <div class="grid grid-last time-from-nff time-to-nff schedule-row-from-sunday schedule-row-to-saturday"></div>
+                  <!--   ./Grid Rows-->
+                    
+                    <div class="grid schedule-sunday time-from-s time-to-nff"></div>
+                    <div class="grid grid-last schedule-sunday time-from-nff time-to-nff"></div>
+                    <div class="grid schedule-monday time-from-s time-to-nff"></div>
+                    <div class="grid grid-last schedule-monday time-from-nff time-to-nff"></div>
+                    
+                    <div class="grid schedule-tuesday time-from-s time-to-nff"></div>
+                    <div class="grid grid-last schedule-tuesday time-from-nff time-to-nff"></div>
+                    
+                    <div class="grid schedule-wednesday time-from-s time-to-nff"></div>
+                    <div class="grid grid-last schedule-wednesday time-from-nff time-to-nff"></div>
+                    
+                    <div class="grid schedule-thursday time-from-s time-to-nff"></div>
+                    <div class="grid grid-last schedule-thursday time-from-nff time-to-nff"></div>
+                    
+                    <div class="grid schedule-friday time-from-s time-to-nff"></div>
+                    <div class="grid grid-last schedule-friday time-from-nff time-to-nff"></div>
+                    
+                    <div class="grid schedule-saturday time-from-s time-to-nff"></div>
+                    <div class="grid grid-last schedule-saturday time-from-nff time-to-nff"></div>
+                    
+            </div>
+            </div> 
+
+        </div>
+    </div>
+
+</body>
+
+</html>

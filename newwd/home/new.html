@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="home.scss" type="text/css">
+  <script src="home.js"></script>
+  <title>Teacher Profiles</title>
+  <link rel="stylesheet" href="event.css">
+</head>
+
+<body>
+  <div class="hero">
+    <div class="section1">
+      <div class="logo">
+        <a href="home.html">
+          <h1>Edubit</h1>
+        </a>
+      </div>
+      <div class="more">
+        <a href="" class="opt">Dashbord</a>
+        <a href="" class="opt">Attendence</a>
+        <a href="" class="opt">Faculty</a>
+        <a href="" class="opt">Exam</a>
+        <a href="" class="opt">Notes</a>
+        <a href="" class="opt">Events</a>
+        <a href="" class="opt">Profile</a>
+        <a href="" class="opt" id="logOut-opt"><img src="icons8-logout-26.png" alt="">Logout</a>
+      </div>
+    </div>
+    <div class="section2">
+      <div class="nav">
+        <div class="todaydate">
+          <p id="datetime"></p>
+
+          <script>
+            // Get current date and time
+            var now = new Date();
+            var datetime = now.toLocaleString();
+
+            // Insert date and time into HTML
+            document.getElementById("datetime").innerHTML = datetime;
+          </script>
+        </div>
+        <div class="search-container">
+
+          <div class="prono">
+            <div class="notification">
+              <button type="button" class="icon-button">
+                <span class="material-icons">notifications</span>
+                <span class="icon-button__badge">2</span>
+              </button>
+            </div>
+            <div class="profile">
+              <button><img src="blank-profile-picture-973460_960_720.webp" alt=""></button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="page-title">
+        <a href="">
+          <h1>Events</h1>
+        </a>
+      </div>
+      <div class="events">
+        <div id="event-container"></div>
+
+  <script src="events.js"></script>
+  <script src="script.js"></script>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

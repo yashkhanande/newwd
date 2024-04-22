@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=., initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="home.scss" type="text/css">
+    <script src="home.js"></script>
+</head>
+
+<body>
+    <div class="hero">
+        <div class="section1">
+            <div class="logo">
+                <a href="home.html">
+                    <h1>Edubit</h1>
+                </a>
+            </div>
+            <div class="more">
+                <a href="" class="opt">Dashbord</a>
+                <a href="" class="opt">Attendence</a>
+                <a href="" class="opt">Faculty</a>
+                <a href="" class="opt">Exam</a>
+                <a href="" class="opt">Notes</a>
+                <a href="new.html" class="opt">Events</a>
+                <a href="" class="opt">Profile</a>
+                <a href="" class="opt" id="logOut-opt"><img src="icons8-logout-26.png" alt="">Logout</a>
+            </div>
+        </div>
+        <div class="section2">
+            <div class="nav">
+                <div class="todaydate">
+                    <p id="datetime"></p>
+
+                    <script>
+                        // Get current date and time
+                        var now = new Date();
+                        var datetime = now.toLocaleString();
+
+                        // Insert date and time into HTML
+                        document.getElementById("datetime").innerHTML = datetime;
+                    </script>
+                </div>
+                <div class="search-container">
+
+                    <div class="prono">
+                        <div class="notification">
+                            <button type="button" class="icon-button">
+                                <span class="material-icons">notifications</span>
+                                <span class="icon-button__badge">2</span>
+                            </button>
+                        </div>
+                        <div class="profile">
+                            <button><img src="blank-profile-picture-973460_960_720.webp" alt=""></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="page-title">
+                <a href="">
+                    <h1>Dashboard</h1>
+                </a>
+            </div>
+            <div class="main">
+                <div class="dashboard">
+                    <div class="highlight">
+                        <div class="attendence-card hcard">
+                            <div class="boxname">
+                                <span>Attendence</span>
+                            </div>
+                            <div class="percentage">
+                                <h3>100%</h3>
+                            </div>
+                        </div>
+                        <div class="exams-card hcard">
+                            <div class="boxname">
+                                <span>Exams</span>
+                            </div>
+                            <div class="exam-date percentage">
+                                <h3>12 May</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="highlight2">
+                        <div class="lab-card h2card">
+                            <div class="card-name">
+                                <h4>Lab</h4>
+                            </div>
+                            <div class="lab-attendence tut-attendence">
+                                <div class="to-attend">
+                                    <h2>20</h2>
+                                </div>
+                                <div class="lab-attendence-percentage">
+                                    <p>Total - 100%</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tutorial-card h2card">
+                            <div class="card-name">
+                                <h4>Tutorial</h4>
+                            </div>
+                            <div class="tut-attendence ">
+                                <div class="to-attend">
+                                    <h2>30</h2>
+                                </div>
+                                <div class="lab-attendence-percentage tut-attendence-percentage">
+                                    <p>Total - 100%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ongoing-event">
+                    <div class="slogan">
+                        <h2>Institutional Calendar and Ongoing Lecture</h2>
+                    </div>
+                    <div class="calender">
+                        <!-- <iframe src="https://calendar.google.com/calendar/embed?src=8dacadbdf7fad066f0dd9bcfcbd29192278876d0401856740a02ac829fc8a8ea%40group.calendar.google.com&ctz=UTC" style="border: 0" width="180" height="180" frameborder="0" scrolling="no"></iframe> -->
+                        <img src="https://s3-alpha-sig.figma.com/img/bf59/6012/3b7856976ed80a4d562f7a618dc5b8a7?Expires=1714348800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Rff~hXObMUuwy9eNatuj1qb3Yj6AIjtBxrnG8ZInP77ILxSa0wRwpkG6m~cxCSRjtiT~FtchWxD8nR7k7CzNwaT9iGrdTk-t6K15OmJdGwmRqhyHpvGBsM0C8dXd3qSS7PVFPtJzKsvwl5FRmVAFtpvrOvBSZuqo2TAXyoV21ysB4Blv0sqOtUmTj8Q8awAw~2-CiiGbUU5YH4sxIQAIE7owptvZuIWi9wGILI7YEp7-5Ywvmmdv9fkaeElQ0KP879eiI9-1prLnMsYaSpsgMvygKyHWXkkK4VzA9XqYLrr4mMDFTVzAJu6VDTN2Toz3ZgqKLxFXUg5idGWGbW1Wbw__"
+                            alt="">
+                    </div>
+                </div>
+                <!-- <div class="table-box">
+                    <div class="table-row table-head">
+                        <div class="table-cell">
+                            <p>Ongoing Activity</p>
+                        </div>
+                        <div class="table-cell">
+                            <p>Date</p>
+                        </div>
+                        <div class="table-cell last-cell">
+                            <p>Subject</p>
+                        </div>
+
+                    </div>
+                    <div class="table-row">
+                        <div class="table-cell">
+                            <p>100</p>
+                        </div>
+                        <div class="table-cell">
+                            <p>11/04/2024</p>
+                        </div>
+                        <div class="table-cell last-cell">
+                            <p>BSE</p>
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-cell">
+                            <p>100</p>
+                        </div>
+                        <div class="table-cell">
+                            <p>11/04/2024</p>
+                        </div>
+                        <div class="table-cell last-cell">
+                            <p>BSE</p>
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <div class="table-cell">
+                            <p>100</p>
+                        </div>
+                        <div class="table-cell">
+                            <p>11/04/2024</p>
+                        </div>
+                        <div class="table-cell last-cell">
+                            <p>BSE</p>
+                        </div>
+                    </div>
+                </div> -->
+
+            </div>
+            <div >
+                <table id="data-table">
+                    <thead>
+                      <tr>
+                        <th>Task</th>
+                        <th>Date</th>
+                        <th>Subject</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <!-- Table body will be populated dynamically -->
+                    </tbody>
+                  </table>
+                  
+                  <script src="data.js"></script>
+                  <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                      const tableBody = document.querySelector("#data-table tbody");
+                  
+                      // Fetch data from data.js
+                      fetchData()
+                        .then(data => {
+                          // Populate table with data
+                          data.forEach(item => {
+                            const row = document.createElement("tr");
+                            row.innerHTML = `
+                              <td>${item.Task}</td>
+                              <td>${item.Date}</td>
+                              <td>${item.Subject}</td>
+                            `;
+                            tableBody.appendChild(row);
+                          });
+                        })
+                        .catch(error => {
+                          console.error("Error fetching data:", error);
+                        });
+                    });
+                  </script>
+            </div>
+        </div>
+        </div>
+        <script src="./home.js">
+
+        </script>
+        
+</body>
+
+</html>
